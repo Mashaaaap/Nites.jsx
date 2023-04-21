@@ -1,17 +1,39 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom/client'
+import React from 'react'
+import reportWebVitals from './reportWebVitals'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import App from './App'
+import './style.css'
+import './reset.css'
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
+let initialStore = [
+  {
+      text: "Note 1",
+      theme: "orange"
+  },
+  {
+      text: "Note 2",
+      theme: "red"
+  },
+  {
+      text: "Note 3",
+      theme: "green"
+  }
+]
+
+const reRender = (notesStore) => {
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+  <div>
+    <App
+      notesStore = {notesStore}
+      reRender = {reRender}
+    />
+  </div>
+ )
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+reRender(initialStore)
+
+reportWebVitals()

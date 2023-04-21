@@ -1,0 +1,22 @@
+.btn{ 
+    display: block;
+    width: 110px;
+    height: 30px;
+    color: wheat;
+    border: none;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.themeOrange{ 
+    background: orange;
+}
+.themeGreen{ 
+    background: green;
+}
+.themeRed{ 
+    background: red;
+}
+.themeDefault{
+    background: #4c7b81;
+}

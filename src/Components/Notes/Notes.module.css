@@ -1,0 +1,20 @@
+.form{ 
+    margin: 25px auto;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input{
+    width:60%;
+    margin: 5px;
+    outline: none;
+}
+.btn{ 
+    width: 35%;
+    height: 30px;
+    border: none;
+    color: wheat;
+    background: #4c7b81;
+    border-radius: 5px;
+}
